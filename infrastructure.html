@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CSE Department Website — Responsive, accessible, multi-page site built with HTML, CSS, and JavaScript." />
+  <title>Infrastructure & Facilities | CSE Department</title>
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Skip to content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CSE Department Home">
+        <img src="images/logo.svg" alt="CSE Dept. logo" class="logo" />
+        <span class="brand-text">Computer Science &amp; Engineering</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only"></span>
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="student.html">Student Corner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" aria-label="Toggle Theme">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main">
+
+    <!-- Infrastructure & Facilities -->
+    <section class="section" aria-labelledby="infra-title">
+      <div class="container">
+        <h1 id="infra-title">Infrastructure &amp; Facilities</h1>
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="images/wpl.jpg" alt="AI/ML Lab" />
+            <figcaption>Windows Programming Lab</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gml.jpg" alt="Cybersecurity Lab" />
+            <figcaption>Graphics and Multimedia Lab</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/seminar_hall.jpeg" alt="Seminar Hall" />
+            <figcaption>Seminar Hall</figcaption>
+          </figure>
+        </div>
+
+        <!-- Laboratory Facilities -->
+        <h2>Laboratory Facilities</h2>
+        <p>
+          The department is well equipped with diversified laboratories comprising 
+          <strong>ten undergraduate labs</strong>, <strong>three postgraduate labs</strong>, 
+          and <strong>four research labs</strong> with cutting-edge hardware.  
+          A <strong>Boston 128GB GPU Server</strong> with 2 NVIDIA Tesla V100 GPUs (32GB each) 
+          supports research in Machine Learning and Distributed Big Data Systems.
+        </p>
+
+        <ul class="checklist">
+          <li>Operating System and Network Programming Lab</li>
+          <li>System Programming Lab</li>
+          <li>Software Engineering Lab</li>
+          <li>Windows Programming Lab</li>
+          <li>Graphics and Multimedia Lab</li>
+          <li>Java Technology Lab</li>
+          <li>Digital Systems Lab</li>
+          <li>Microprocessors Lab</li>
+          <li>Web Technology Lab</li>
+          <li>Post-Graduate (PG) Lab – I</li>
+          <li>Post-Graduate (PG) Lab – II</li>
+          <li>IoT Lab</li>
+          <li>High Performance Computing Lab</li>
+          <li>Open Source Lab</li>
+          <li>BIRAC Lab</li>
+          <li>SDN Lab</li>
+        </ul>
+
+        <!-- Seminar Hall -->
+        <h2>Seminar Hall</h2>
+        <p>
+          A fully equipped seminar hall with <strong>120-seat capacity</strong> is available 
+          for events and guest lectures. Facilities include:
+        </p>
+        <ul class="checklist">
+          <li>Overhead Projector &amp; LCD Projector</li>
+          <li>Dedicated Laptop</li>
+          <li>29″ Color Television</li>
+          <li>Public Address System</li>
+        </ul>
+
+        <!-- Conference Hall -->
+        <h2>Conference Hall</h2>
+        <p>
+          A <strong>20-seat conference hall</strong> supports project reviews and research discussions, 
+          equipped with a desktop and television.
+        </p>
+
+        <!-- Classrooms -->
+        <h2>Classrooms</h2>
+        <p>
+          Each classroom is fitted with:
+        </p>
+        <ul class="checklist">
+          <li>Overhead &amp; LCD Projectors</li>
+          <li>Dedicated Laptops</li>
+          <li>Wi-Fi enabled for e-Learning support</li>
+        </ul>
+
+        <!-- Department Library -->
+        <h2>Department Library</h2>
+        <p>
+          The dedicated department library houses <strong>1000+ books</strong> across various domains and several journals, 
+          including:
+        </p>
+        <ul class="checklist">
+          <li>ACM Transactions on Database Systems</li>
+          <li>Software Engineering and Methodology</li>
+          <li>Operating Systems and Programming Languages</li>
+          <li>ACM Computing Surveys</li>
+          <li>International Journal for Neural Systems</li>
+          <li>Computational Intelligence and Applications</li>
+          <li>Software Engineering Notes</li>
+          <li>Operating System Review</li>
+          <li>Computer Communication Review</li>
+          <li>Computer Architecture News</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/logo.svg" alt="CSE Dept. logo" class="logo small" />
+        <p class="muted">Empowering innovation through computer science.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="student.html">Student Corner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <!-- Simple SVG icons (no external libs) -->
+          <a href="#" aria-label="Visit our Twitter">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <path d="M23 3c-1 .5-2 .9-3 1 1-1 2-3 2-3-1 .8-2 1.3-3 1.6C17 1 14 2 14 5v1C9 6 5 4 2 1c0 0-3 6 3 9-1 0-2-.3-3-1 0 3 2 5 5 6-1 1-3 1.5-5 1.5 2 1.2 4 2 7 2 8 0 13-7 12-13 1-1 2-2 2-3z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Visit our LinkedIn">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <path d="M4 3C3 3 2 4 2 5s1 2 2 2 2-1 2-2-1-2-2-2zM3 8h2v13H3zM9 8h2v2h.1c.3-.6 1.1-1.2 2.3-1.2C16 8.8 17 10 17 12.6V21h-2v-7c0-1.8-.6-3-2.1-3-1.1 0-1.8.8-2.1 1.6-.1.2-.1.6-.1 1v7H9z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> CSE Department. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

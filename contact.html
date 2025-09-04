@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CSE Department Website — Responsive, accessible, multi-page site built with HTML, CSS, and JavaScript." />
+  <title>Contact | CSE Department</title>
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Skip to content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CSE Department Home">
+        <img src="images/logo.svg" alt="CSE Dept. logo" class="logo" />
+        <span class="brand-text">Computer Science &amp; Engineering</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only"></span>
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="student.html">Student Corner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" aria-label="Toggle Theme">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main">
+
+    <!-- Contact -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container grid-2">
+        <div>
+          <h1 id="contact-title">Contact Us</h1>
+          <p><strong>Address:</strong> CSE Department, SSN College of Engineering, Kalavakkam - 603110</p>
+          <p><strong>Phone:</strong> +91-44-1234 5678</p>
+          <p><strong>Email:</strong> cse@ssn.edu.in</p>
+
+          <div class="map-wrap" aria-label="Location map">
+            <!-- Embedded Google Map -->
+            <iframe
+              title="SSN College of Engineering Location"
+              src="https://www.google.com/maps?q=SSN%20College%20of%20Engineering&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+        </div>
+        <div>
+          <h2>Send a Message</h2>
+          <form id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required/>
+              <small class="error" id="err-name" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required/>
+              <small class="error" id="err-email" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required/>
+              <small class="error" id="err-subject" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" minlength="10" required></textarea>
+              <small class="error" id="err-message" aria-live="polite"></small>
+            </div>
+
+            <button class="btn primary" type="submit">Submit</button>
+            <p class="muted small" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/logo.svg" alt="CSE Dept. logo" class="logo small" />
+        <p class="muted">Empowering innovation through computer science.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="student.html">Student Corner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <!-- Simple SVG icons (no external libs) -->
+          <a href="#" aria-label="Visit our Twitter">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <path d="M23 3c-1 .5-2 .9-3 1 1-1 2-3 2-3-1 .8-2 1.3-3 1.6C17 1 14 2 14 5v1C9 6 5 4 2 1c0 0-3 6 3 9-1 0-2-.3-3-1 0 3 2 5 5 6-1 1-3 1.5-5 1.5 2 1.2 4 2 7 2 8 0 13-7 12-13 1-1 2-2 2-3z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Visit our LinkedIn">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <path d="M4 3C3 3 2 4 2 5s1 2 2 2 2-1 2-2-1-2-2-2zM3 8h2v13H3zM9 8h2v2h.1c.3-.6 1.1-1.2 2.3-1.2C16 8.8 17 10 17 12.6V21h-2v-7c0-1.8-.6-3-2.1-3-1.1 0-1.8.8-2.1 1.6-.1.2-.1.6-.1 1v7H9z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> CSE Department. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0e1630"/>
+  <g fill="#5b8cff" opacity="0.3">
+    <circle cx="120" cy="120" r="80"/>
+    <circle cx="360" cy="180" r="90"/>
+    <circle cx="720" cy="120" r="70"/>
+  </g>
+  <text x="400" y="260" text-anchor="middle" font-size="28" font-family="Inter, Arial" fill="#eef2ff" font-weight="700">
+    Cybersecurity Lab
+  </text>
+</svg>

@@ -1,0 +1,18 @@
+        <svg xmlns="http://www.w3.org/2000/svg" width="240" height="100" viewBox="0 0 240 100" role="img" aria-label="SSN logo">
+          <title>SSN Logo</title>
+          <defs>
+            <!-- Gradient fill -->
+            <linearGradient id="ssnGradient" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#5b8cff"/>
+              <stop offset="100%" stop-color="#4ad6a7"/>
+            </linearGradient>
+          </defs>
+
+          <!-- SSN text -->
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                font-family="Inter, system-ui, sans-serif"
+                font-weight="800" font-size="64"
+                fill="url(#ssnGradient)">
+            SSN
+          </text>
+        </svg>
